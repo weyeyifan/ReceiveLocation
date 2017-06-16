@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_earfcn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="N/A"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pci"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="N/A"
+        />
+
+    <TextView
+        android:id="@+id/tv_tai"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="N/A"
+        />
+
+    <TextView
+        android:id="@+id/tv_cgi"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="N/A"
+        />
+
+    <TextView
+        android:id="@+id/tv_sinr"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="N/A"
+        />
+
+    <TextView
+        android:id="@+id/rsrp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="N/A"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="目标号码:"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_targetphone"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="00000000000"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginLeft="3dp"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="目标STMSI:"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_targettmsi"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="STMSI总个数:"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="N/A"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="无效STMSI数:"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_invalid"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="N/A"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="触发次数:"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="N/A"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="当前服务小区:"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/currentplot"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="N/A"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="过滤"
+            android:textSize="14sp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_begin"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector"
+            android:text="开始"
+            />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector"
+            android:text="停止"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#838383"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="按次数排序"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="STMSI"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="次数"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="时间"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="PCI"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="EARFCN"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#373737"/>
+    <ListView
+        android:id="@+id/item_lv_nullcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

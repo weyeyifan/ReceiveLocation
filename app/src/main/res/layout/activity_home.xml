@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被动式定位"
+            android:textSize="22sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:text="目标号码"/>
+
+        <EditText
+            android:id="@+id/et_savenum"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_savenum"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector"
+            android:text="保存"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/protect"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/protect"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="守控小区"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nullcode"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/nullcode"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="空码搜索"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/target"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/target"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="目标测向"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/diturb"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="干扰探测"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/setting"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="参数配置"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/phone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="本机信息"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="复位"/>
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="连接"/>
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="断开"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e7e7e7"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:text="设备状态:"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:text="未就绪"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="M1"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:background="@android:color/holo_red_light"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="M2"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:text="M3"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:text="M4"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
